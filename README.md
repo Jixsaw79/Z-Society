@@ -34,7 +34,7 @@ These are learning areas, not a claim that every member specialises in each disc
 
 | Event | Year | Result |
 |---|---:|---|
-| EWUCSC Intra CTF | 2026 | Participant — earned a certificate |
+| EWUCSC Intra CTF | 2026 | **11th place** — earned a participation certificate |
 | DEADFACE CTF | 2026 | Participant — earned a competitor certificate ([CTFtime](https://ctftime.org/event/3279)) |
 | cruXipher CTZF | 2026 | **80th / 389 teams** ([CTFtime](https://ctftime.org/event/3369)) |
 | CREST CTF 2.0 | 2026 | **98th / 300 teams** ([CTFtime](https://ctftime.org/event/3477)) |
