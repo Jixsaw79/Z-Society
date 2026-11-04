@@ -1,0 +1,7 @@
+Contact: mailto:shadmanibtesham79@gmail.com
+Contact: https://github.com/Jixsaw79/Z-Society/security/advisories/new
+Expires: 2027-11-04T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://jixsaw79.github.io/Z-Society/.well-known/security.txt
+Policy: https://github.com/Jixsaw79/Z-Society/blob/main/SECURITY.md
+Acknowledgments: https://jixsaw79.github.io/Z-Society/
