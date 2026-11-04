@@ -66,6 +66,7 @@ nav a:hover,nav a[aria-current="page"]{color:var(--accent)}
 .achievement-copy{padding:1.1rem}.achievement-copy h3{margin:.5rem 0 .35rem;font-family:var(--sans);font-size:1.05rem}
 .achievement-copy p{color:var(--muted);font-size:.84rem;margin:0 0 .5rem}
 .achievement-meta{display:flex;gap:.5rem;font-size:.7rem;color:var(--dim);margin-bottom:.4rem}
+.achievement-link{display:inline-block;margin-top:.35rem;color:var(--accent);font-size:.75rem;text-decoration:none}.achievement-link:hover{text-decoration:underline;text-underline-offset:.2em}
 .social-links{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
 .social-links a{display:inline-flex;align-items:center;justify-content:center;width:2.3rem;height:2.3rem;padding:0;border:1px solid var(--line);border-radius:50%;color:#eef0f8;text-decoration:none;transition:border-color .15s,color .15s,background .15s}
 .social-links a:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
