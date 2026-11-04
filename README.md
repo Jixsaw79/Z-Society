@@ -49,7 +49,7 @@ We update this section as the team takes part in more events. Placements are rec
 
 ## Website
 
-The repository contains the source for the Z-Society team website. Its interface intentionally follows the terminal-inspired visual language of the [Jixsaw portfolio squad page](https://jixsaw079.github.io/squad/), including the dark purple palette, DM Mono and Manrope typography, command-line navigation, dossier-style team panel, and terminal collaboration window.
+The repository contains the source for the Z-Society team website. Its interface intentionally follows the terminal-inspired visual language of the [Jixsaw portfolio squad page](https://jixsaw79.github.io/squad/), including the dark purple palette, DM Mono and Manrope typography, command-line navigation, dossier-style team panel, and terminal collaboration window.
 
 ### Run locally
 
