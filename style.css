@@ -1,4 +1,4 @@
-/* Z-Society — terminal design system */
+/* Z-Society — terminal design system (no third-party fonts) */
 :root{
   color-scheme:dark;
   --bg:#0b0912;
@@ -17,8 +17,8 @@
   --green:#6ee7a8;
   --red:#ff6b7a;
   --yellow:#f5c76e;
-  --mono:"DM Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
-  --sans:"Manrope",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --radius:8px;
   --header-h:56px;
 }
