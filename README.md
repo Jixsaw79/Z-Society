@@ -32,8 +32,6 @@ These are learning areas, not a claim that every member specialises in each disc
 
 ## Competition Record
 
-Our recorded participation and results include:
-
 | Event | Year | Result |
 |---|---:|---|
 | cruXipher CTZF | 2026 | **80th / 389 teams** |
@@ -51,7 +49,7 @@ We update this section as the team takes part in more events. Placements are rec
 
 ## Website
 
-The repository contains the source for the Z-Society team website, featuring team information, member profiles, and competition milestones.
+The repository contains the source for the Z-Society team website. Its interface intentionally follows the terminal-inspired visual language of the [Jixsaw portfolio squad page](https://jixsaw079.github.io/squad/), including the dark purple palette, DM Mono and Manrope typography, command-line navigation, dossier-style team panel, and terminal collaboration window.
 
 ### Run locally
 
@@ -72,7 +70,7 @@ No build step or package installation is required for the current static website
 ```text
 Z-Society/
 ├── index.html       # Website structure and content
-├── style.css        # Layout, styling, and responsive design
+├── style.css        # Terminal-inspired theme and responsive styling
 ├── Z-Society.jpg    # Team emblem
 ├── Jixsaw.jpg       # Founder profile image
 ├── Elham.png        # Co-founder profile image
@@ -85,7 +83,7 @@ Z-Society/
 - **GitHub:** [Jixsaw79](https://github.com/Jixsaw79)
 - **Team repository:** [Jixsaw79/Z-Society](https://github.com/Jixsaw79/Z-Society)
 
-For team-related enquiries, you can reach the team lead at **shadmanibtesham79@gmail.com**.
+For team-related enquiries, contact the team lead at **shadmanibtesham79@gmail.com**.
 
 ---
 
