@@ -4,16 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0b0912">
-<meta name="description" content="Z-Society is an independent CTF and cybersecurity team built on practice, collaboration, and integrity.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'; child-src 'none'; media-src 'none'; worker-src 'none'; connect-src 'none'; manifest-src 'none'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; style-src-attr 'none'; font-src 'self' https://fonts.gstatic.com; upgrade-insecure-requests">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Z-Society is an independent CTF and cybersecurity team founded by Shadman Ibtesham (Jixsaw). Practice, collaboration, and honest competition records.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Z-Society">
-<meta property="og:description" content="A team built on curiosity, persistence, and collaborative cybersecurity practice.">
+<meta property="og:title" content="Z-Society — CTF Team">
+<meta property="og:description" content="A CTF team built on curiosity, persistence, and collaborative cybersecurity practice.">
 <meta property="og:url" content="https://jixsaw79.github.io/Z-Society/">
+<meta property="og:image" content="https://jixsaw79.github.io/Z-Society/Z-Society.jpg">
+<link rel="canonical" href="https://jixsaw79.github.io/Z-Society/">
 <title>jixsaw@z-society:~$ — Z-Society</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%230b0912'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='monospace' font-size='42' font-weight='700' fill='%238ea0ff'%3EZ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261104">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -26,6 +33,7 @@
     <nav aria-label="Main navigation">
       <a href="#about">about</a>
       <a href="#roster">roster</a>
+      <a href="#values">values</a>
       <a href="#records">records</a>
       <a href="#contact">contact</a>
     </nav>
@@ -39,28 +47,35 @@
     <div class="squad-hero-copy">
       <p class="page-kicker">$ cat team_profile.txt</p>
       <h1><span class="accent">Z-Society</span>.</h1>
-      <p>A CTF team built on curiosity, persistence, and the belief that you get better faster when you solve hard problems together.</p>
+      <p>An independent CTF team built on curiosity, persistence, and the belief that you get better faster when you solve hard problems together.</p>
+      <div class="stat-row" aria-label="Team snapshot">
+        <div class="stat"><span class="stat-value">2026</span><span class="stat-label">founded</span></div>
+        <div class="stat"><span class="stat-value">4</span><span class="stat-label">people</span></div>
+        <div class="stat"><span class="stat-value">5</span><span class="stat-label">events logged</span></div>
+        <div class="stat"><span class="stat-value">11th</span><span class="stat-label">best finish</span></div>
+      </div>
     </div>
     <div class="squad-hero-logo">
-      <img src="Z-Society.jpg" alt="Z-Society team logo">
+      <img src="Z-Society.jpg" alt="Z-Society team logo" width="220" height="220" decoding="async" fetchpriority="high">
     </div>
   </section>
 
   <section class="archive-panel" id="about">
     <div class="archive-top">
       <span>TEAM DOSSIER / Z-SOCIETY</span>
-      <span>FOUNDED 2026</span>
+      <span>INDEPENDENT · CTF · 2026</span>
     </div>
 
     <div class="squad-feature">
       <div class="squad-founder-photo">
-        <img src="Jixsaw.jpg" alt="Shadman Ibtesham, founder and leader of Z-Society">
+        <img src="Jixsaw.jpg" alt="Shadman Ibtesham, founder and leader of Z-Society" width="280" height="320" decoding="async">
       </div>
       <div>
-        <p class="page-kicker">FOUNDER &amp; TEAM LEADER</p>
+        <p class="page-kicker">FOUNDER & TEAM LEADER</p>
         <h2>Shadman Ibtesham <span class="accent">aka Jixsaw</span></h2>
-        <p class="squad-lead">I founded Z-Society to build a collaborative environment for CTF competitors and cybersecurity learners. We focus on consistent practice, sharing approaches, and developing skills through hands-on challenges.</p>
-        <div class="social-links" aria-label="Jixsaw's social profiles">
+        <p class="squad-lead">I founded Z-Society to build a serious practice environment for CTF competitors and cybersecurity learners. We train consistently, share real approaches, and treat every competition as a chance to measure progress — not inflate claims.</p>
+        <p class="squad-lead secondary">Focus areas: digital forensics, networking, OSINT, crypto, and steady CTF reps. Portfolio: <a class="inline-link" href="https://jixsaw79.github.io/" target="_blank" rel="noopener noreferrer">jixsaw79.github.io ↗</a></p>
+        <div class="social-links" aria-label="Jixsaw social profiles">
           <a href="https://www.facebook.com/Jixsaw79" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.1H7v3.2h2.8V21h3.7z"/></svg>
           </a>
@@ -73,7 +88,7 @@
           <a href="https://github.com/Jixsaw79" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.6-1.3-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.5 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.5.1-3 0 0 1-.3 3.1 1.2a10.7 10.7 0 0 1 5.7 0c2.1-1.5 3.1-1.2 3.1-1.2.6 1.5.2 2.7.1 3 .8.8 1.2 1.8 1.2 3 0 4.2-2.6 5.2-5.1 5.5.4.3.8 1 .8 2v3c0 .3.2.6.8.5A11.1 11.1 0 0 0 12 .9z"/></svg>
           </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shadmanibtesham79%40gmail.com&su=Hello%20Jixsaw" aria-label="Email" title="Email Shadman">
+          <a href="mailto:shadmanibtesham79@gmail.com?subject=Hello%20Jixsaw" aria-label="Email" title="Email Shadman">
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -83,18 +98,24 @@
     <div class="section-label mt-section" id="roster">
       <span class="cmd">$ ls</span> <span class="path">roster/</span>
     </div>
+    <div class="section-heading-inline">
+      <h2 class="sr-only">Team roster</h2>
+      <p class="muted-line">Core team and external collaborators. Roles stay honest — no padded titles.</p>
+    </div>
     <div class="squad-members">
       <article class="squad-member">
-        <div class="member-photo"><img src="Elham.png" alt="Elham Ahmed, aka Ryozu" loading="lazy" decoding="async"></div>
+        <div class="member-photo"><img src="Elham.png" alt="Elham Ahmed, aka Ryozu" width="400" height="300" loading="lazy" decoding="async"></div>
         <p class="page-kicker">CO-FOUNDER</p>
         <h3>Elham Ahmed <span class="muted">(Ryozu)</span></h3>
-        <p>Co-founder</p>
+        <p>Co-founder · CTF practice partner</p>
+        <div class="tag-list compact"><span>CTF</span><span>Team ops</span></div>
       </article>
       <article class="squad-member">
-        <div class="member-photo"><img src="Tahsin.png" alt="Tahsin Navid Zaman, aka Xerloz" loading="lazy" decoding="async"></div>
+        <div class="member-photo"><img src="Tahsin.png" alt="Tahsin Navid Zaman, aka Xerloz" width="400" height="300" loading="lazy" decoding="async"></div>
         <p class="page-kicker">SQUAD MEMBER</p>
         <h3>Tahsin Navid Zaman <span class="muted">(Xerloz)</span></h3>
-        <p>CTF Team Member</p>
+        <p>CTF team member</p>
+        <div class="tag-list compact"><span>CTF</span><span>Practice</span></div>
       </article>
     </div>
 
@@ -103,53 +124,57 @@
     </div>
     <div class="squad-members collaborator-grid">
       <article class="squad-member">
-        <div class="member-photo"><img src="Sowvik.jpg" alt="Sowvik Chowdhury" loading="lazy" decoding="async"></div>
+        <div class="member-photo"><img src="Sowvik.jpg" alt="Sowvik Chowdhury" width="400" height="300" loading="lazy" decoding="async"></div>
         <p class="page-kicker">COLLABORATOR</p>
         <h3>Sowvik Chowdhury</h3>
-        <p>Collaborating with Z-Society on shared work and CTF practice.</p>
+        <p>Shared CTF practice and collaborative problem-solving with Z-Society.</p>
         <span class="member-university">External collaborator</span>
       </article>
     </div>
 
+    <div class="section-label mt-section" id="values">
+      <span class="cmd">$ cat</span> <span class="path">values.md</span>
+    </div>
     <div class="squad-values">
       <article>
         <span>01 / PRACTICE</span>
         <h3>Learn by doing</h3>
-        <p>Build skill through CTF challenges, deliberate experimentation, and consistent practice.</p>
+        <p>Skill is built through challenges, deliberate experimentation, and showing up consistently — not through theory alone.</p>
       </article>
       <article>
         <span>02 / COLLABORATION</span>
         <h3>Get better together</h3>
-        <p>Share approaches, compare reasoning, and help teammates work through difficult problems.</p>
+        <p>Share approaches, compare reasoning, and help teammates break through difficult problems under pressure.</p>
       </article>
       <article>
         <span>03 / INTEGRITY</span>
         <h3>Understand the why</h3>
-        <p>Practise responsibly, respect boundaries, and focus on understanding the techniques.</p>
+        <p>Responsible learning. Clear reasoning. No shortcuts that skip understanding. Results reported honestly.</p>
       </article>
     </div>
 
     <div class="section-label mt-section" id="records">
       <span class="cmd">$ cat</span> <span class="path">competition_records.log</span>
     </div>
+    <p class="muted-line records-intro">Logged results from team participation. Rankings are as reported — wins and mid-table finishes both count as practice.</p>
     <div class="achievement-grid">
-      <article class="achievement-card">
+      <article class="achievement-card featured">
         <div class="achievement-art">
           <span class="achievement-art-code">CTF / 2026 / 001</span>
           <span class="achievement-art-icon">[01]</span>
-          <span class="achievement-art-bottom">CERTIFICATE</span>
+          <span class="achievement-art-bottom">BEST FINISH</span>
         </div>
         <div class="achievement-copy">
-          <div class="achievement-meta"><span>EWUCSC Intra CTF</span><span>2026</span></div>
+          <div class="achievement-meta"><span>EWUCSC Intra CTF</span><span>2026</span><span class="pill">HIGHLIGHT</span></div>
           <h3>11th place</h3>
-          <p>Placed 11th in the East West University Cyber Security Club's Intra-University CTF and earned a participation certificate.</p>
+          <p>Placed 11th in the East West University Cyber Security Club Intra-University CTF and earned a participation certificate.</p>
         </div>
       </article>
       <article class="achievement-card">
         <div class="achievement-art">
           <span class="achievement-art-code">CTF / 2026 / 002</span>
           <span class="achievement-art-icon">[02]</span>
-          <span class="achievement-art-bottom">PARTICIPATION</span>
+          <span class="achievement-art-bottom">EXTERNAL</span>
         </div>
         <div class="achievement-copy">
           <div class="achievement-meta"><span>DEADFACE CTF</span><span>2026</span></div>
@@ -166,7 +191,7 @@
         </div>
         <div class="achievement-copy">
           <div class="achievement-meta"><span>cruXipher CTZF</span><span>2026</span></div>
-          <h3>80th place</h3>
+          <h3>80th / 389</h3>
           <p>Placed 80th among 389 participating teams.</p>
           <a class="achievement-link" href="https://ctftime.org/event/3369" target="_blank" rel="noopener noreferrer">CTFtime event ↗</a>
         </div>
@@ -179,7 +204,7 @@
         </div>
         <div class="achievement-copy">
           <div class="achievement-meta"><span>CREST CTF 2.0</span><span>2026</span></div>
-          <h3>98th place</h3>
+          <h3>98th / 300</h3>
           <p>Placed 98th among 300 participating teams.</p>
           <a class="achievement-link" href="https://ctftime.org/event/3477" target="_blank" rel="noopener noreferrer">CTFtime event ↗</a>
         </div>
@@ -191,28 +216,34 @@
           <span class="achievement-art-bottom">TEAM PLACEMENT</span>
         </div>
         <div class="achievement-copy">
-          <div class="achievement-meta"><span>HI Cyber Con 2026 CTF</span><span>2026</span></div>
+          <div class="achievement-meta"><span>HI Cyber Con CTF</span><span>2026</span></div>
           <h3>385th place</h3>
-          <p>Placed 385th in the HI Cyber Con 2026 CTF.</p>
+          <p>Placed 385th in the HI Cyber Con 2026 CTF — logged for the record, not hidden.</p>
           <a class="achievement-link" href="https://ctftime.org/event/3460" target="_blank" rel="noopener noreferrer">CTFtime event ↗</a>
         </div>
       </article>
     </div>
-    <p class="squad-footnote">COMPETITION RECORDS REFLECT THE TEAM'S REPORTED RESULTS AND PARTICIPATION.</p>
+    <p class="squad-footnote">COMPETITION RECORDS REFLECT THE TEAM’S REPORTED RESULTS. NO FABRICATED RANKINGS.</p>
 
     <div class="term-window mt-section" id="contact">
       <div class="term-titlebar">
         <div class="term-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
-        <div class="term-title">collab.sh</div>
+        <div class="term-title">collab.sh — invite</div>
       </div>
       <div class="term-body">
         <div class="prompt">$ cat invitation.txt</div>
-        <div class="out">Z-Society welcomes opportunities to collaborate with CTF players and teams. If you'd like to practise together, exchange ideas, or team up for a competition, get in touch.</div>
-        <a class="button button-primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=shadmanibtesham79%40gmail.com&su=CTF%20Collaboration%20with%20Z-Society">email to collaborate</a>
+        <div class="out">Z-Society welcomes CTF players and teams who want to practise together, exchange ideas, or team up for a competition. Reach out if that sounds like you.</div>
+        <div class="prompt">$ echo $CONTACT</div>
+        <div class="out contact-lines">
+          <span class="key">email:</span> <a class="inline-link" href="mailto:shadmanibtesham79@gmail.com?subject=CTF%20Collaboration%20with%20Z-Society">shadmanibtesham79@gmail.com</a><br>
+          <span class="key">github:</span> <a class="inline-link" href="https://github.com/Jixsaw79/Z-Society" target="_blank" rel="noopener noreferrer">Jixsaw79/Z-Society</a><br>
+          <span class="key">portfolio:</span> <a class="inline-link" href="https://jixsaw79.github.io/" target="_blank" rel="noopener noreferrer">jixsaw79.github.io</a>
+        </div>
+        <a class="button button-primary" href="mailto:shadmanibtesham79@gmail.com?subject=CTF%20Collaboration%20with%20Z-Society">email to collaborate</a>
       </div>
     </div>
 
-    <div class="squad-footnote">THINK DEEPER. BREAK SMARTER. LEARN TOGETHER.</div>
+    <div class="squad-footnote motto">THINK DEEPER. BREAK SMARTER. LEARN TOGETHER.</div>
   </section>
 
   <a class="back-link" href="#main">$ cd ~</a>
@@ -222,7 +253,7 @@
   <div class="wrap footer-inner">
     <a class="wordmark" href="#main"><span class="mark">ZS</span> z-society@team</a>
     <span>exit 0 · 2026</span>
-    <a href="#main">cd ~</a>
+    <a href="https://jixsaw79.github.io/" target="_blank" rel="noopener noreferrer">jixsaw portfolio ↗</a>
   </div>
 </footer>
 </body>
