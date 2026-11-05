@@ -83,8 +83,9 @@ Z-Society/
 ## Security and maintenance
 
 - The site is static and intentionally ships without client-side JavaScript.
-- A restrictive Content Security Policy is included in the HTML as defence in depth.
+- A restrictive meta-delivered Content Security Policy and automated static security audit provide defence in depth.
 - Report vulnerabilities privately using the process in [SECURITY.md](SECURITY.md).
+- Review the GitHub account, repository permissions, and `main` branch protection as described in [SECURITY.md](SECURITY.md).
 - Keep competition placements and member roles factual and update the website and this README together.
 - Check the site at mobile, tablet, and desktop widths after content changes.
 
