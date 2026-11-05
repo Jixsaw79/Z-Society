@@ -65,7 +65,7 @@ The repository contains the source for the Z-Society team website. Its interface
    ```
 3. Open `index.html` in a web browser.
 
-No build step or package installation is required for the current static website.
+No build step or package installation is required. The site is served directly by GitHub Pages. For local preview, opening `index.html` is sufficient; for a more realistic path-based preview, use any static file server.
 
 ## Repository Structure
 
@@ -79,6 +79,14 @@ Z-Society/
 ├── Sowvik.jpg       # Collaborator profile image
 └── Tahsin.png       # Team member profile image
 ```
+
+## Security and maintenance
+
+- The site is static and intentionally ships without client-side JavaScript.
+- A restrictive Content Security Policy is included in the HTML as defence in depth.
+- Report vulnerabilities privately using the process in [SECURITY.md](SECURITY.md).
+- Keep competition placements and member roles factual and update the website and this README together.
+- Check the site at mobile, tablet, and desktop widths after content changes.
 
 ## Connect
 

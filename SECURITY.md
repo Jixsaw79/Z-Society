@@ -31,7 +31,7 @@ Please do not open a public issue for an unpatched vulnerability. This is a pers
 
 This is a **static, zero-JavaScript** GitHub Pages site.
 
-Controls in the HTML:
+Controls in the HTML (delivered as a meta CSP):
 
 - `script-src 'none'` — no scripts
 - `object-src 'none'` — no plugins
@@ -40,11 +40,13 @@ Controls in the HTML:
 - `frame-src 'none'` / `child-src 'none'` — no frames
 - `style-src-attr 'none'` — no inline style attributes from markup injection paths we control
 - `upgrade-insecure-requests`
+- No inline event handlers or inline style attributes; presentation is kept in the external stylesheet.
+- No third-party JavaScript, analytics, embeds, or remotely hosted fonts.
 - No third-party script, analytics, or font CDNs
 - External links use `rel="noopener noreferrer"`
 
 ## Limitations
 
-GitHub Pages does not let this repo set arbitrary HTTP response headers. HSTS, Permissions-Policy, and `frame-ancestors` depend on the host. Meta CSP is defense in depth, not a substitute for protecting the GitHub account that publishes the site.
+GitHub Pages does not let this repository configure arbitrary HTTP response headers. HSTS, `X-Content-Type-Options`, `Permissions-Policy`, and `frame-ancestors` therefore cannot be reliably set from these HTML files. A meta-delivered CSP is defence in depth; it is not equivalent to a response-header CSP and does not replace protecting the GitHub account that publishes the site.
 
 Protect the GitHub account with a strong unique password and two-factor authentication. Never commit secrets, tokens, or private flags to this repository.

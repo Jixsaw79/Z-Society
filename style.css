@@ -472,3 +472,81 @@ footer{border-top:1px solid var(--line);margin-top:1.5rem}
     transition-duration:.01ms!important;
   }
 }
+
+/* 2026 refinement: clearer hierarchy, stronger focus states, and better small-screen flow */
+:root{--content-width:1080px;--surface-shadow:0 18px 55px rgba(0,0,0,.28)}
+body{
+  background:
+    radial-gradient(ellipse at 12% 4%,rgba(89,75,166,.14),transparent 34rem),
+    radial-gradient(ellipse at 92% 30%,rgba(72,94,180,.09),transparent 30rem),
+    var(--bg)
+}
+.wrap{width:min(100% - 2rem,var(--content-width))}
+:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:3px}
+section[id]{scroll-margin-top:calc(var(--header-h) + 1rem)}
+.site-header{box-shadow:0 8px 30px rgba(0,0,0,.12)}
+nav a{padding:.35rem 0;position:relative}
+nav a::after{content:"";position:absolute;left:0;right:100%;bottom:.05rem;height:1px;background:var(--accent);transition:right .18s ease}
+nav a:hover::after,nav a:focus-visible::after{right:0}
+.access-granted{margin-top:1.7rem}
+.squad-hero{position:relative;padding:3.8rem 1.5rem 2.7rem;margin:0 -1.5rem .5rem;border-bottom:1px solid rgba(142,160,255,.15)}
+.squad-hero::before{content:"";position:absolute;inset:1.2rem 0;z-index:-1;background:linear-gradient(110deg,rgba(142,160,255,.07),transparent 68%);border:1px solid rgba(142,160,255,.09);border-radius:12px}
+.squad-hero-logo img{filter:drop-shadow(0 12px 28px rgba(0,0,0,.4));transition:transform .25s ease,filter .25s ease}
+.squad-hero-logo img:hover{transform:translateY(-3px) rotate(1deg);filter:drop-shadow(0 16px 32px rgba(142,160,255,.15))}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.25rem}
+.button-quiet{background:rgba(255,255,255,.025);color:var(--text)}
+.button-quiet:hover{background:var(--accent-soft)}
+.stat{min-width:92px;transition:border-color .18s ease,transform .18s ease}
+.stat:hover{border-color:var(--line-strong);transform:translateY(-2px)}
+.archive-panel{box-shadow:var(--surface-shadow);padding:clamp(1rem,2.5vw,1.5rem)}
+.archive-top{align-items:center;letter-spacing:.045em}
+.squad-feature{gap:clamp(1.25rem,3vw,2rem)}
+.squad-founder-photo img{transition:transform .35s ease}
+.squad-founder-photo:hover img{transform:scale(1.025)}
+.squad-member,.achievement-card{height:100%}
+.squad-member{max-width:none}
+.squad-member h3{line-height:1.35}
+.member-photo img{transition:transform .35s ease}
+.squad-member:hover .member-photo img{transform:scale(1.035)}
+.collaborator-grid{grid-template-columns:minmax(0,320px)}
+.squad-values article{transition:transform .18s ease,border-color .18s ease}
+.squad-values article:hover{transform:translateY(-3px);border-color:var(--line-strong)}
+.achievement-card{display:flex;flex-direction:column}
+.achievement-copy{display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.achievement-copy p{flex:1}
+.achievement-art{position:relative;isolation:isolate;overflow:hidden}
+.achievement-art::after{content:"";position:absolute;width:150px;height:150px;right:-45px;bottom:-70px;border:1px solid rgba(142,160,255,.2);border-radius:50%;box-shadow:0 0 0 18px rgba(142,160,255,.025),0 0 0 38px rgba(142,160,255,.02);z-index:-1}
+.achievement-link{padding:.2rem 0}
+.social-links a{width:2.55rem;height:2.55rem}
+.term-window{box-shadow:var(--surface-shadow),0 0 0 1px rgba(142,160,255,.06)}
+.term-body{padding:clamp(1rem,2.5vw,1.4rem)}
+.squad-footnote{line-height:1.8}
+.error-page{padding:clamp(3rem,8vw,5.5rem) 0 4rem;min-height:70vh}
+.error-title{font-family:var(--sans);font-size:clamp(2rem,5vw,3rem);letter-spacing:-.03em;line-height:1.15}
+.error-copy{color:var(--muted);max-width:460px}
+.error-action{margin-top:1.5rem}
+.footer-inner{padding-block:.5rem}
+.footer-inner a:focus-visible,.inline-link:focus-visible{outline-offset:4px}
+@media(max-width:640px){
+  .wrap{width:min(100% - 1.5rem,var(--content-width))}
+  .squad-hero{padding:2.5rem .25rem 1.8rem;margin:0 0 .4rem}
+  .squad-hero::before{inset:1rem -.25rem}
+  .hero-actions{gap:.5rem}
+  .hero-actions .button{flex:1 1 100%;justify-content:center}
+  .archive-top{font-size:.65rem;flex-wrap:wrap}
+  .squad-feature{grid-template-columns:minmax(0,1fr)}
+  .squad-founder-photo{max-width:160px}
+  .stat-row{gap:.5rem}
+  .stat{flex:1 1 calc(50% - .5rem);min-width:0}
+  .social-links{gap:.6rem}
+}
+@media(min-width:641px) and (max-width:860px){.squad-hero{padding-inline:.5rem;margin-inline:0}}
+@media(prefers-reduced-motion:reduce){nav a::after{transition:none}}
+@media print{
+  :root{color-scheme:light;--bg:#fff;--panel:#fff;--panel-2:#f4f4f4;--text:#111;--muted:#333;--dim:#555;--line:#ccc;--line-strong:#999;--accent:#263d9a}
+  body{background:#fff;color:#111;font-size:11pt}
+  body::before,.site-header,.access-granted .cursor,.social-links,.back-link,footer{display:none!important}
+  .wrap{width:100%}
+  .archive-panel,.achievement-card,.squad-member,.term-window{box-shadow:none;break-inside:avoid}
+  a{color:#111;text-decoration:underline}
+}
